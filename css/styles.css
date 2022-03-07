@@ -1,0 +1,203 @@
+/* styling for the admin project. Styled by Mark Akom */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+input, button{
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(250px, 24%) repeat(4, 1fr);
+}
+
+/* styling of the aside section */
+
+aside {
+    grid-column: 1 / 2;
+    padding-left: 12%;
+}
+
+aside .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+aside .brand > .brand-text {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+aside .brand svg {
+    width: 28px;
+    height: 28px;
+}
+
+aside nav {
+    padding-bottom: 36px;
+}
+
+aside nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+aside nav ul li a p {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+aside .other-nav ul li a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 0;
+}
+
+aside .other-nav ul li a p {
+    font-size: 1.15rem;
+}
+
+/* styling of the header section */
+
+header {
+    grid-column: 2 / 6;
+    padding: 24px 3.5%;
+}
+
+.form-profile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.form-profile form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    grid-column: 1 / 4;
+}
+
+.form-profile form button,
+.form-profile input {
+    display: block;
+}
+
+.form-profile form input {
+    border: 2px solid black;
+    width: 75%;
+    font-size: 1.05rem;
+    padding: 4px 8px;
+    outline: none;
+    border-radius: 50px;
+}
+
+.form-profile button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 32px;
+}
+
+.form-profile button svg {
+    width: 32px;
+}
+
+.form-profile .profile {
+    grid-column: 4 / 5;
+    justify-self: end;
+}
+
+.form-profile .profile ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.form-profile .profile ul li > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.form-profile .profile ul li > svg {
+    width: 28px;
+}
+
+.form-profile .profile ul li > p {
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.full-profile-top-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.full-profile {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.full-profile > img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.full-profile .profile-info p {
+    font-weight: 500;
+    font-size: 0.90rem;
+}
+
+.full-profile .profile-info h2 {
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 1.25;
+}
+
+.full-profile-top-links .top-links {
+    display: flex;
+    gap: 20px;
+    justify-self: end;
+}
+
+.full-profile-top-links .top-links a {
+    display: block;
+    border: 1px solid;
+    padding: 6px 24px;
+    font-size: 1.05rem;
+    border-radius: 50px;
+}
